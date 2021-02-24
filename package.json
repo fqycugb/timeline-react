@@ -4,6 +4,13 @@
   "description": "多路视频播放时间进度条",
   "main": "src/index.js",
   "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack-dev-server --mode development",
+    "buildweb": "webpack --config webpack.config.js --mode production",
+    "build": "webpack --config webpack.build.config.js --mode production",
+    "buildlib": "webpack --config webpack.build.config.js --mode development --watch"
+  },
   "devDependencies": {
     "@babel/core": "^7.11.4",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
@@ -22,6 +29,7 @@
     "webpack-dev-server": "^3.11.0"
   },
   "dependencies": {
+    "moment": "^2.29.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0"
   }
